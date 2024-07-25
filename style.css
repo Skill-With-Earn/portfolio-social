@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before{
+    content: " ";
+    background-image: url(assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.outer-box{
+    width: 350px;
+    height: 75%;
+    border: 1px solid black;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.logoImg{
+    height: 120px;
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainLogo{
+    margin-top: 20px;
+    height: 100px;
+}
+
+.aboutUs{
+    margin: 10px 20px;
+    text-align: center;
+    /* color: #9AB5C7; */
+    text-shadow: 3px 3px 5px #9AB5C7;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.social-bar{
+    width: 100%;
+    height: calc(100% - 201px);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.social-menu{
+    height: 50px;
+    width: 300px;
+    color: black;
+    border: 1px solid black;
+    margin: 5px 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-menu:hover{
+    box-shadow: 5px 5px 10px #9AB5C7;
+}
+
+p{
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+}
